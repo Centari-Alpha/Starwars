@@ -1,0 +1,23 @@
+4.26.19
+Issue: Need a way to import imgs to the card component that match the planet's name
+Solution: -Build a web API that has the img links loaded into a JSON file
+	  -Write a function that matches the name from the img API to the name of the info 	   API from SWAPI 
+	  -Link the result of that function into the "src" value of the IMG element of the 	   Card.js component
+
+~~~~still need to learn how to build API and integrate functions into React~~~~~
+recommended links: 
+
+https://blog.rapidapi.com/20-tutorials-on-how-to-create-your-own-api-sorted-by-programming-language/
+
+Progress: (as of 4.30.19):
+- Using express, node, and postman we can create our own databases. We can also integrate functions into the main App.js document using a constructor and referencing "this.state" to make sure the function is executed while searching for cards on planets.
+
+------------------------
+4.30.19
+Idea: Populate image database using automation to actually pull from all 61 entires of the api 
+Solution: -Learn how to build a program that will scan the web for images matching the 		   name of each planet and choose a photo that fits certain parameters based on 	   size, position of the planet in the photo, and brightness/ planet clairty.
+	  -find an api that has the flexibility to control certain parameters(ClariFai is 	   a strong possibility
+
+------------------------
+5.3.19
+Note: URLs need to be stored in the Database as strings after https:// due to sql reading the ":" as a commmand. When linking the images to pull from the database the code needs to read as src=`https://${planets[${id}]}
